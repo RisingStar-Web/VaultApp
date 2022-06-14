@@ -33,7 +33,7 @@ export default function Claim() {
       setIsClaiming(false)
       setClaimableAmount((prev) => prev - amount)
     } catch (error) {
-      setError(error?.error.message)
+      setError(error?.error?.message)
     }
   }
 
